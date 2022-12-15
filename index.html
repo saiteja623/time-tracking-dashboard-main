@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-box">
+        <div class="profile">
+          <img src="./images/image-jeremy.png" alt="" />
+          <div class="text">
+            <p>Report for</p>
+            <h2>Jeremy Roberson</h2>
+          </div>
+        </div>
+        <div class="time">
+          <a href="#" onclick="dailyStats()">Daily</a>
+          <a href="#" onclick="weeklyStats()"> Weekly</a>
+          <a href="#" onclick="monthlyStats()">Monthly</a>
+        </div>
+      </div>
+      <div class="grid-box">
+        <div class="card">
+          <div class="image">
+            <img src="./images/icon-work.svg" alt="" />
+          </div>
+          <div class="stats">
+            <div class="title">
+              <p>Work</p>
+              <div class="more">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="stats-content">
+              <h4 class="current">32 hrs</h4>
+              <p class="prev">Last week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image" style="background-color: hsl(195, 74%, 62%)">
+            <img src="./images/icon-play.svg" alt="" />
+          </div>
+          <div class="stats">
+            <div class="title">
+              <p>play</p>
+              <div class="more">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="stats-content">
+              <h4 class="current">32 hrs</h4>
+              <p class="prev">Last week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image" style="background-color: hsl(348, 100%, 68%)">
+            <img src="./images/icon-study.svg" alt="" />
+          </div>
+          <div class="stats">
+            <div class="title">
+              <p>Study</p>
+              <div class="more">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="stats-content">
+              <h4 class="current">32 hrs</h4>
+              <p class="prev">Last week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image" style="background-color: hsl(145, 58%, 55%)">
+            <img src="./images/icon-exercise.svg" alt="" />
+          </div>
+          <div class="stats">
+            <div class="title">
+              <p>Exercise</p>
+              <div class="more">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="stats-content">
+              <h4 class="current">32 hrs</h4>
+              <p class="prev">Last week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image" style="background-color: hsl(264, 64%, 52%)">
+            <img src="./images/icon-social.svg" alt="" />
+          </div>
+          <div class="stats">
+            <div class="title">
+              <p>Social</p>
+              <div class="more">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="stats-content">
+              <h4 class="current">32 hrs</h4>
+              <p class="prev">Last week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image" style="background-color: hsl(43, 84%, 65%)">
+            <img src="./images/icon-self-care.svg" alt="" />
+          </div>
+          <div class="stats">
+            <div class="title">
+              <p>Self Care</p>
+              <div class="more">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+            <div class="stats-content">
+              <h4 class="current">32 hrs</h4>
+              <p class="prev">Last week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

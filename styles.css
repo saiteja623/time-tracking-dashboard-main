@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width:900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .profile-box{
+    max-width:170px;
+    background-color:  hsl(235, 46%, 20%);
+    margin-right:20px;
+    align-self: stretch;
+
+}
+.profile-box{
+    font-family: 'Rubik', sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.profile-box .profile{
+    padding:20px 15px;
+    padding-bottom:40px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    padding-right:40px;
+    display: flex;
+    flex-direction: column;
+}
+.profile-box img{
+    width:50px;
+    margin-bottom: 20px;
+    border:solid 2px white;
+    border-radius: 50%;
+}
+.profile p{
+    font-size:0.5rem;
+    color:hsl(236, 100%, 87%);
+}
+.profile h2{
+    font-size:1.2rem;
+    color:white;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.profile-box .time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding:0 20px;
+    padding-top:20px;
+    color:hsl(235, 45%, 61%);
+    font-size:0.6rem;
+}
+.time a{
+    margin:5px 0px;
+    font-weight: 500;
+    cursor: pointer;
+    color: hsl(236, 100%, 87%);
+    text-decoration: none;  
+} 
+.grid-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.card{
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+.card .image{
+    width:100%;
+    height:40px;
+    background-color: hsl(15, 100%, 70%);
+    position:relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.image img{
+    position: absolute;
+    right:10px;
+    top:-5px;
+    width:45px;
+}
+.stats{
+    position: relative;
+    padding:20px;
+    margin-top:-15px;
+    border-radius: 10px;
+    background-color:  hsl(235, 46%, 20%);
+    z-index:2;
+}
+.stats .title{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.title p{
+    font-size:0.6rem;
+    color:white;
+}
+.more{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content:space-between;
+    column-gap: 2px;
+}
+.more .dot{
+    width:3px;
+    height:3px;
+    border-radius:50%;
+    background-color:white;
+}
+.stats-content{
+    padding-right:40px;
+}
+.stats-content h4{
+    font-size:1.7rem;
+    color:white;
+    font-weight: 300;
+}
+.stats-content  p{
+    margin-top:10px;
+    font-size:0.56rem;
+    color: hsl(236, 100%, 87%);
+}
+@media screen and (max-width:750px)
+{
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width:500px
+    }
+    .container .profile-box{
+        max-width:100%;
+        margin-bottom: 20px;
+    }
+    .profile-box .profile{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .profile-box .time{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+        padding-bottom:20px;
+    }
+    .profile img{
+        width:50px;
+        margin-top:10px;
+    }
+}
+@media screen and (max-width:450px)
+{
+    html{
+        font-size:14px;
+    }
+    .container {
+        display: block;
+        max-width:230px;
+        margin-top:50px;
+        /* background-color: red; */
+    }
+    .container .profile-box{
+        width: 100%;
+    }
+    .profile-box .profile{
+        width:100%;
+        padding:10px;
+    }
+    .grid-box{
+        grid-template-columns: 1fr;
+    }   
+    .profile .text
+    {
+        margin-left:10px;
+    }
+    .stats-content{
+        display: flex;
+        width:100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding:0;
+        /* background-color: violet; */
+    }
+}
