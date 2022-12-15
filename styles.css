@@ -182,7 +182,7 @@ body{
     }
     .container {
         display: block;
-        max-width:230px;
+        max-width:270px;
         margin-top:50px;
         /* background-color: red; */
     }
